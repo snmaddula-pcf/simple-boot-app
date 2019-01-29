@@ -1,0 +1,12 @@
+---
+applications:
+- name: simple-boot-app
+  instances: 1
+  memory: 1G
+  buildpack: java_buildpack_offline
+  env:
+      SPRING_PROFILES_ACTIVE : dev 
+  instances: 1
+  memory: 1G
+  routes:
+    - route: simpleb-boot-app.snm-dev.io
